@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_add_label"
+          android:icon="@drawable/content_new"
+          android:title="@string/add_label"
+        custom:showAsAction="ifRoom|collapseActionView"
+        custom:actionLayout="@layout/addview"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        custom:showAsAction="ifRoom">
+    </item>
+
+    <!--<item-->
+        <!--android:id="@+id/pipeline_enabled"-->
+        <!--android:icon="@drawable/action_settings"-->
+        <!--android:orderInCategory="105"-->
+        <!--android:title="@string/action_settings"-->
+        <!--custom:showAsAction="ifRoom"-->
+        <!--android:checkable="true">-->
+    <!--</item>-->
+
+</menu>

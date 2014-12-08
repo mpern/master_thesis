@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/unused_select_all" android:title="@android:string/selectAll" android:icon="@drawable/content_select_all"/>
+    <item android:id="@+id/unused_activate" android:title="@string/activate" android:icon="@drawable/add_to_queue"/>
+</menu>

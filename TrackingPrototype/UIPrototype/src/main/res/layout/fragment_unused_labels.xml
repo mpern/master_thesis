@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RadioGroup android:id="@+id/sortGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/sort_text">
+
+        <RadioButton android:id="@id/sort_text"
+            android:text="@string/sort_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+        <RadioButton android:id="@+id/sort_mru"
+            android:text="@string/sort_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <RadioButton android:id="@+id/sort_count"
+            android:text="@string/sort_cnt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+<FrameLayout
+    android:id="@+id/unusedFragmentContainer"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:layout_below="@id/sortGroup"
+    >
+</FrameLayout>
+</RelativeLayout>

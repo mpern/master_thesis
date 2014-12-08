@@ -1,0 +1,71 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0-rc1'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.android.support:appcompat-v7:21.0.2"
+    compile "net.sf.supercsv:super-csv:2.1.0"
+    compile('de.keyboardsurfer.android.widget:crouton:1.8+@aar') {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile project(":LabelDataSource")
+    compile project(":action_mode_list_fragment")
+    compile project(":SwipeToDismissUndoList")
+    compile project(":TimePickerWithSeconds")
+    compile files('libs/funf.jar')
+    compile files('libs/gson-2.1.funf.jar')
+}
+
+
+android {
+    buildToolsVersion '21.1.1'
+    compileSdkVersion 21
+
+    defaultConfig {
+        minSdkVersion 11
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    if (project.hasProperty("uiprototype.signing")
+            && new File(project.property("uiprototype.signing")).exists()) {
+
+        Properties props = new Properties()
+        props.load(new FileInputStream(file(project.property("uiprototype.signing"))))
+
+        signingConfigs {
+            release {
+                storeFile file(props['keystore'])
+                storePassword props['keystore.password']
+                keyAlias props['keyAlias']
+                keyPassword props['keyPassword']
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+}

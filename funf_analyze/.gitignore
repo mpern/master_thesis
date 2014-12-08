@@ -1,0 +1,15 @@
+__pycache__/
+.idea
+*.swp
+*.zip
+data_visualization.html
+movement_path.kml
+*.kml
+*.kmz
+*.db
+result/
+kmz/
+bw.png
+classic.png
+*.csv
+.~lock*

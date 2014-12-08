@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UIPrototype</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nav_cancel">Cancel</string>
+    <string name="talkingto_default">Currently talking to...</string>
+    <string name="button_clearall">Clear All</string>
+    <string name="delete">Delete</string>
+    <string name="activate">Activate</string>
+    <string name="sort_date">Date</string>
+    <string name="sort_cnt">Usage count</string>
+    <string name="output_count">Usage Count: %s</string>
+    <string name="ouput_lastused">Last Used: %s</string>
+    <string name="deactivate_label">deactivated label \"%s\"</string>
+    <string name="deactivate_n">updated %d entries</string>
+    <string name="activate_n">%d labels activated</string>
+    <string name="activate_label">activated label \"%s\"</string>
+    <string name="discard_label">discarded label \"%s\"</string>
+    <string name="add_label">Add Label</string>
+    <string name="sort_text">Text</string>
+
+
+    <string name="archived">Archived!</string>
+    <string name="archived_not_enabled">Data Mining is not enabled</string>
+    <string name="export_success">exported labels to %s</string>
+    <string name="widget_title">Active Labels</string>
+    <string name="empty_view_text">No labels active</string>
+    <string name="output_activedts">Active since: %s</string>
+    <string name="editEnd">Edit endtime</string>
+    <string name="not_ended"><![CDATA[%d Labels not deactivated; End time is before Start Time!]]></string>
+    <string name="time_title">Set time</string>
+    <string name="labeldetails_title">Edit Label details</string>
+    <string name="startTimeText">Start Time: %s</string>
+    <string name="endTimeText">End Time: %s</string>
+    <string name="update_label">updated label \"%s\"</string>
+    <string name="startBeforeEnd">Start time must be after End time</string>
+    <string name="endBeforeStart">End time must be before Start time</string>
+</resources>

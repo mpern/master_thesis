@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pipeline_enabled"
+        android:title="@string/pref_title_pipeline_enabled"
+        android:summary="@string/pref_description_pipeline_enabled"
+        />
+
+    <Preference android:key="archive_now"
+                android:title="@string/pref_title_archive_now"
+                android:summary="@string/pref_description_archive_now" />
+
+    <Preference android:key="export_labels"
+        android:title="@string/pref_title_export_labels"
+        android:summary="@string/pref_description_export_labels" />
+
+
+</PreferenceScreen>
