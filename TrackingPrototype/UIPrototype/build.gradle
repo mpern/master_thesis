@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0-rc1'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compile "com.android.support:appcompat-v7:21.0.2"
+    compile "com.android.support:appcompat-v7:21.0.3"
     compile "net.sf.supercsv:super-csv:2.1.0"
     compile('de.keyboardsurfer.android.widget:crouton:1.8+@aar') {
         exclude group: 'com.google.android', module: 'support-v4'
@@ -30,7 +30,7 @@ dependencies {
 
 
 android {
-    buildToolsVersion '21.1.1'
+    buildToolsVersion '21.1.2'
     compileSdkVersion 21
 
     defaultConfig {
