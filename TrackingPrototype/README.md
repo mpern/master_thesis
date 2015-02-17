@@ -35,7 +35,7 @@ Guide](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-
 * `gradlew test` runs all unit tests based on
   [robolectric](http://robolectric.org/). Robolectric tests do not need an
 emulator to execute and are therefore faster and enable TDD
-    * Note: Robolectric tests are provided by the [gradle-android-test-plugin](https://github.com/square/gradle-android-test-plugin)
+    * Note: Robolectric tests are provided by the [gradle-android-test-plugin](https://github.com/robolectric/robolectric-gradle-plugin)
     * Test results are in `<module-folder>/build/test-report`
 
 ### Using Android Studio
